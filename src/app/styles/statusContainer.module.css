@@ -1,0 +1,25 @@
+.status-container {
+  border-radius: 3px;
+  min-height: 180px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 6px 6px -3px rgba(0,0,0,0.2), 0px 10px 14px 1px rgba(0,0,0,0.14), 0px 4px 18px 3px rgba(0,0,0,0.12);
+  text-align: center;
+}
+
+.status-container > div {
+  padding: 16px 16px 24px 16px;
+}
+
+.status-container p.success {
+  background: green;
+  color: white;
+  line-height: 24px;
+}
+
+.status-container p.error {
+  background: red;
+  color: white;
+  line-height: 24px;
+}

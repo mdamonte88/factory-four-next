@@ -1,0 +1,30 @@
+p {
+    margin: 0;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+  
+    display: block;  
+}
+
+p.small {
+    font-size: 0.875rem;
+    line-height: 1.43;
+    letter-spacing: 0.01071em;
+}
+
+p.medium {
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+}
+
+p.large {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+
+p.red {
+  color: red;
+}
