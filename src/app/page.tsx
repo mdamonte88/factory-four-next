@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import './styles/main.css'
-import styles from './styles/page.module.css'
+import './styles/main.scss'
+import styles from './styles/page.module.scss'
 import StatusComponent from './components/StatusContainer'
 import StatusType from './types/status';
 import apiNames from './constants/apiConstants';

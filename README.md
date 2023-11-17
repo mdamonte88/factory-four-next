@@ -3,6 +3,9 @@
 ## Tech Stack
 
 - NodeJS Version 20.9.0
+- Next Version 14.0.3
+- React Version 18.2.0
+- SASS Version 1.69.5
 
 ## Getting Started
 

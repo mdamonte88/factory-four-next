@@ -1,6 +1,6 @@
 import React from 'react';
 import StatusType from '../types/status';
-import styles from '../styles/statusContainer.module.css'; // Import the CSS module
+import styles from '../styles/statusContainer.module.scss';
 
 const StatusComponent: React.FC<StatusType> = ({ apiName, success, message, hostname, time }) => {
   const apiNameUpper = apiName.toUpperCase();
