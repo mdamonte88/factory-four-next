@@ -1,8 +1,10 @@
 import React from 'react';
 import StatusType from '../types/status';
 import styles from '../styles/statusContainer.module.scss';
+import { formatTime } from '../utils/dateUtils'; 
 
 const StatusComponent: React.FC<StatusType> = ({ apiName, success, message, hostname, time }) => {
+  const dateFormatted = formatTime(time);
   const apiNameUpper = apiName.toUpperCase();
   const [title, description] = message.split(':');
 
@@ -14,13 +16,13 @@ const StatusComponent: React.FC<StatusType> = ({ apiName, success, message, host
           <>
             <p className={styles.success}>{title}</p>
             <p className='small'>{hostname}</p>
-            <p className='small'>{time}</p>
+            <p className='small'>{dateFormatted}</p>
           </>
         )}
 
         {!success && (
           <>
-            <p className="error">Error</p>
+            <p className={styles.error}>Error</p>
             <p className='large red'>OUTAGE</p>
             <p className='small red'>{title}</p>
             <p className='small red'>{description}</p>
