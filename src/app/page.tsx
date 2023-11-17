@@ -26,9 +26,8 @@ export default function Home() {
   };
 
   useEffect(() => {
-
     updateStatuses();
-    const timeToUpdate = 10000;
+    const timeToUpdate = Number(process.env.NEXT_PUBLIC_REACT_APP_TIME_UPDATE) || 10000;
     const intervalId = setInterval(updateStatuses, timeToUpdate);
 
     return () => clearInterval(intervalId);

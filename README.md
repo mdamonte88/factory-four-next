@@ -1,6 +1,23 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# FactoryFourNext Project
+
+## Tech Stack
+
+- NodeJS Version 20.9.0
 
 ## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `yarn` or `npm install`
+3. Create the environment variables files in root folder(.env, .env.production):
+
+`.env` example:
+
+```
+  NEXT_PUBLIC_REACT_APP_TIME_UPDATE=15000
+```
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 
 First, run the development server:
 
