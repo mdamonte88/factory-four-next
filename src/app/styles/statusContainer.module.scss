@@ -1,4 +1,7 @@
+@import 'variables.scss';
+
 .status-container {
+  background: $white;
   border-radius: 3px;
   min-height: 180px;
   overflow: hidden;
@@ -13,13 +16,40 @@
 }
 
 .status-container p.success {
-  background: green;
+  background: $green;
   color: white;
   line-height: 24px;
 }
 
 .status-container p.error {
-  background: red;
+  background: $red;
   color: white;
   line-height: 24px;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+  .status-container {
+    max-width: calc(33.333333% - 32px); // Taking into account the padding
+    flex-basis: 33.333333%;
+    flex-grow: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 960px) {
+  .status-container {
+    max-width: calc(25% - 32px);
+    flex-basis: 25%;
+    flex-grow: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .status-container {
+    max-width: calc(16.666667% - 32px);
+    flex-basis: 16.666667%;
+    flex-grow: 0;
+  }
 }

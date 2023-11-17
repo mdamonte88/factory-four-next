@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import './styles/main.scss'
 import styles from './styles/page.module.scss'
+import Header from './components/Header'
 import StatusComponent from './components/StatusContainer'
 import StatusType from './types/status';
 import apiNames from './constants/apiConstants';
@@ -35,17 +36,22 @@ export default function Home() {
 
 
   return (
-    <main className={styles.main}>
-      {statuses.map((status) => (
-        <StatusComponent
-          key={status.apiName}
-          apiName={status.apiName}
-          success={status.success}
-          message={status.message}
-          hostname={status.hostname}
-          time={status.time}
-        />
-      ))}
-    </main>
+    <div>
+      <Header />
+      <div className={styles.centered_container}>
+        <div className={styles.dashboard_container}>
+          {statuses.map((status) => (
+            <StatusComponent
+              key={status.apiName}
+              apiName={status.apiName}
+              success={status.success}
+              message={status.message}
+              hostname={status.hostname}
+              time={status.time}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   )
 }
